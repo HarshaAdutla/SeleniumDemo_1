@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");  // Here chrome driver was stored on local storage, so i am calling it directly
         ChromeDriverService service = ChromeDriverService.createDefaultService();
         WebDriver driver = new ChromeDriver(service);
         driver.manage().window().maximize();
